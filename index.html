@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffffff;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .profile-container {
+            background-color: #f9f9f9;
+            width: 100%;
+            max-width: 400px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 0px;
+            text-align: center;
+        }
+
+        .profile-container img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin-bottom: 10px; 
+        }
+
+        .profile-container h2 {
+            margin: 0;
+            font-size: 24px;
+            color: #333;
+        }
+
+        .menu a {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 15px;
+            border-radius: 0px;
+            background-color: #ffffff;
+            color: #333;
+            text-decoration: none;
+            font-size: 16px;z-index:99;
+        }
+
+        .menu a:hover {
+            background-color: #e9e9e9;
+        }
+
+        .menu a svg {
+            width: 20px;
+            height: 20px;
+            color: #bbb;
+        }
+
+        .bottom-nav {
+            display: flex;
+            justify-content: space-around;
+            padding: 10px 0;
+            background-color: #fff;
+            border-top: 1px solid #e6e6e6;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            max-width: 480px;
+        }
+
+        .bottom-nav a {
+            color: #999;
+            font-size: 12px;
+            text-decoration: none;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .bottom-nav a svg {
+            width: 24px;
+            height: 24px;
+        }
+
+        .bottom-nav a.active {
+            color: #333;
+        }
+    </style>
+  </head>
+<body>
+
+<div class="profile-container">
+  
+<div class="profile-container2">
+    <img src="https://via.placeholder.com/80" alt="Profile Picture">
+    <h2>Gigital</h2>
+    <p>Edukasi Kesehatan Gigi Mulut Digital pertama dan terpercaya</p>
+  </div>
+    <div class="menu">
+        <a href="#"><span>My Address</span><span>&#10095;</span></a>
+        <a href="#"><span>Account</span><span>&#10095;</span></a>
+      
+      </div><br/>
+      <div class="menu">
+        <a href="#"><span>Notifications</span><span>&#10095;</span></a>
+        <a href="#"><span>Devices</span><span>&#10095;</span></a>
+        <a href="#"><span>Passwords</span><span>&#10095;</span></a>
+        <a href="#"><span>Language</span><span>&#10095;</span></a>
+    </div>
+</div>
+
+<div class="bottom-nav">
+    <a href="#" class="active">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path d="M3 12l7.89-7.89a1.5 1.5 0 012.12 0L21 12m-9 10V9"/></svg>
+        <span>Shop</span>
+    </a>
+    <a href="#">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path d="M3 12l7.89-7.89a1.5 1.5 0 012.12 0L21 12m-9 10V9"/></svg>
+        <span>Explore</span>
+    </a>
+    <a href="#">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path d="M3 12l7.89-7.89a1.5 1.5 0 012.12 0L21 12m-9 10V9"/></svg>
+        <span>Brands</span>
+    </a>
+    <a href="#">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path d="M3 12l7.89-7.89a1.5 1.5 0 012.12 0L21 12m-9 10V9"/></svg>
+        <span>Profile</span>
+    </a>
+</div>
+
+</body>
+</html>
