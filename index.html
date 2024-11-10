@@ -36,6 +36,7 @@
     <style>
         :root {
             --base-font: 19px;
+            --gaps:1.618em;
             --scale: 1.618; /* Golden ratio */
             --primary-color: #2D3250;
             --secondary-color: #424769;
@@ -77,7 +78,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            margin: 0 auto;
+            margin: var(--gaps) auto 0;
         }
 
         .profile-img i {
@@ -129,7 +130,7 @@
             text-align: center;
         }
         .link-items {
-            font-size: calc(var(--base-font) * var(--scale));
+            font-size: calc(var(--base-font) * 1);
             color: var(--secondary-color);
             margin-bottom: calc(var(--base-font) * var(--scale));
             padding: 0 1rem;
@@ -159,6 +160,7 @@
             .profile-img {
                 width: 100px;
                 height: 100px;
+                margin-top: 1.618em;
             }
         }
     </style>
@@ -179,7 +181,7 @@
                 <span class="link-items">Webinar & Workshop</span>
             <a href="#" class="link-item">
                 <i class="fa-solid fa-tablet-screen-button" style="color:#111111;"></i>
-                <span>E-Book & Modul Pembelajaran</span>
+                <span class="link-items">E-Book & Modul Pembelajaran</span>
             </a>
             <a href="#" class="link-item">
                 <i class="fa-brands fa-youtube" style="color:#cc0000;"></i>
