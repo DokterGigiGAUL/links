@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta
       name="description"
-      content="Dokter Gigi GAUL Website, Blog and all the Cool Stuff. Digitalb is my playground."
+      content="Dokter Gigi GAUL Website, Blog and all the Cool Stuff. Gigital is my playground."
     />
     <meta name="license" content="Website : DokterGigiGAUL - MIT License" />
     <meta
@@ -86,28 +86,28 @@
         }
 
         h1 {
-            font-size: calc(var(--base-font) * var(--scale));
-            margin-bottom: calc(var(--base-font) * 0.5);
+            font-size: calc(var(--base-font) * var(--scale) * var(--scale));
+            margin-bottom: calc(var(--base-font) * var(--scale));
             color: var(--primary-color);
         }
 
         .bio {
-            font-size: calc(var(--base-font) * 0.9);
+            font-size: calc(var(--base-font) * 1);
             color: var(--secondary-color);
-            margin-bottom: calc(var(--base-font) * 1.5);
+            margin-bottom: calc(var(--base-font) * var(--scale));
             padding: 0 1rem;
         }
 
         .links {
             display: flex;
             flex-direction: column;
-            gap: calc(var(--base-font) * 0.8);
+            gap: calc(var(--base-font) * 1);
         }
 
         .link-item {
             background-color: white;
-            padding: calc(var(--base-font) * 0.8) calc(var(--base-font) * 1);
-            border-radius: 12px;
+            padding: calc(var(--base-font) * 1) calc(var(--base-font) * 1);
+            border-radius: 16px;
             text-decoration: none;
             color: var(--primary-color);
             display: flex;
@@ -122,13 +122,18 @@
         }
 
         .link-item i {
-            margin-right: calc(var(--base-font) * 0.8);
+            margin-right: calc(var(--base-font) * 1);
             font-size: calc(var(--base-font) * 1.2);
             color: var(--accent-color);
             width: calc(var(--base-font) * 1.5);
             text-align: center;
         }
-
+        .link-items {
+            font-size: calc(var(--base-font) * var(--scale));
+            color: var(--secondary-color);
+            margin-bottom: calc(var(--base-font) * var(--scale));
+            padding: 0 1rem;
+        }
         footer {
             margin-top: calc(var(--base-font) * 2);
             text-align: center;
@@ -171,27 +176,27 @@
         <div class="links">
             <a href="#" class="link-item" style="border:1px solid #ccc;">
                 <i class="fa-solid fa-laptop" style="color:#009191;"></i>
-                <span>Webinar & Workshop</span>
+                <span class="link-items">Webinar & Workshop</span>
             <a href="#" class="link-item">
                 <i class="fa-solid fa-tablet-screen-button" style="color:#111111;"></i>
                 <span>E-Book & Modul Pembelajaran</span>
             </a>
             <a href="#" class="link-item">
                 <i class="fa-brands fa-youtube" style="color:#cc0000;"></i>
-                <span>Video Edukasi</span>
+                <span class="link-items">Video Edukasi</span>
             </a>
             </a>
             <a href="#" class="link-item">
                 <i class="fa-brands fa-whatsapp" style="color:#009900;"></i>
-                <span>Konsultasi via WhatsApp</span>
+                <span class="link-items">Konsultasi via WhatsApp</span>
             </a>
             <a href="#" class="link-item">
                 <i class="fa-brands fa-instagram" style="color:#ff00cc;"></i>
-                <span>Instagram</span>
+                <span class="link-items">Instagram</span>
             </a>
             <a href="#" class="link-item">
                 <i class="fa-brands fa-twitter" style="color:#0071e3;"></i>
-                <span>Tweet &amp; Threads</span>
+                <span class="link-items">Tweet &amp; Threads</span>
             </a>
         </div>
 
