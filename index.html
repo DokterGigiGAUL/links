@@ -40,9 +40,17 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">    <title>Profile Page</title>
     <style>
+        :root {
+            --base-font: 19px;
+            --scale: 1.618; /* Golden ratio */
+            --primary-color:#f9f9f9;
+            --secondary-color:#111111;
+            --accent-color:#0071e3;
+            --light-color:#f0f0f0;
+        }
         body {
             font-family: 'Inter', Arial, sans-serif;
-            background-color: #f9f9f9;
+            background-color: var(--primary-color);
             margin: 0;
             padding:0;
             display: flex;
@@ -52,7 +60,7 @@
         }
 
         .profile-container {
-            background-color: #f9f9f9;
+            background-color: var(--primary-color);
             width: 100%;
             padding: 0 0 30px;
             text-align: center;
@@ -67,13 +75,13 @@
 
         .profile-container h2 {
             margin: 0;
-            font-size: 31px;font-weight:800;
-            color: #f9f9f9;
+            font-size: calc(var(--base-font) * 2);font-weight:800;
+            color: var(--primary-color);
         }
 
         .profile-container p {
-            font-size: 19px; line-height:24px;
-            color: #f9f9f9;
+            font-size: calc(var(--base-font) * 1); line-height:24px;
+            color: var(--primary-color);
             margin: 5px 0 45px; padding:15px 30px 15px 30px;
         }
         
@@ -101,8 +109,8 @@
             justify-content: space-between;
             padding: 24px 20px;
             border-radius: 0px;
-            background-color: #ffffff;
-            color: #333;
+            background-color: var(--light-color);
+            color: var(--secondary-color);
             text-decoration: none;
             font-size: 19px;font-weight:700;
             z-index:99;
@@ -115,14 +123,14 @@
         .menu a svg {
             width: 20px;
             height: 20px;
-            color: #bbb; margin-right: 15px;
+            color: var(--primary-color); margin-right: 15px;
         }
 
         .bottom-nav {
             display: flex;
             justify-content: space-around;
             padding: 10px 0;
-            background-color: #fff;
+            background-color: var(--light-color);
             border-top: 1px solid #e6e6e6;
             position: fixed;
             bottom: 0;
@@ -130,7 +138,7 @@
         }
 
         .bottom-nav a {
-            color: #999;
+            color: var(--primary-color);
             font-size: 12px;
             text-decoration: none;
             display: flex;
@@ -144,11 +152,19 @@
         }
 
         .bottom-nav a.active {
-            color: #333;
+            color: #111111;
         }
 @media only screen and (min-width: 600px) {
+    :root {
+            --base-font: 24px;
+            --scale: 1.618; /* Golden ratio */
+            --primary-color:#f9f9f9;
+            --secondary-color:#111111;
+            --accent-color:#0071e3;
+            --light-color:#f0f0f0;
+        }
   .profile-container {
-            background-color: #f9f9f9;
+            background-color: var(--primary-color);
             width: 100%;
             padding: 0 0 60px;
             text-align: center;
